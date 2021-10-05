@@ -13,3 +13,5 @@ ffmpeg -ss $from -to $to -i ../ogg/$open ${open%.*}.mp3
 ffmpeg -hide_banner -loop 1 -i ../img/cover_big1.png -i ${open%.*}.mp3 -c:v libx264 -preset ultrafast -tune stillimage -c:a copy -pix_fmt yuv420p -shortest -vf scale=720:-2 -vf  subtitles=../subtitle/tieude.srt:force_style='MarginV=250' ${open%.*}.mp4
 start https://drive.google.com/drive/folders/1pB8hDQn6TeoVAPY6gEUYIHUa0feBvOUQ
 read open2
+
+ 
